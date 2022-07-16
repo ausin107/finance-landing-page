@@ -1,0 +1,15 @@
+@media screen and (min-width: 992px) {
+  .nav {
+    margin-left: 10rem !important;
+    margin-right: 10rem !important;
+  }
+  .banner-container {
+    height: 85vh;
+  }
+  .square-btn {
+    background-color: #ff6363 !important;
+  }
+  .banner-input:focus {
+    outline: none;
+  }
+}
