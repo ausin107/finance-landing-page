@@ -19,24 +19,39 @@
     <script defer src="/app.js"></script>
   </head>
   <body style="background-color: #f2f5f9">
-    <div
-      class="nav container-lg d-flex flex-row py-4 align-items-baseline position-absolute"
-      style="z-index: 10"
-    >
-      <a class="text-white fw-bold fs-3 me-5" href="/">Easy</a>
-      <ul class="list-unstyled d-flex align-items-baseline mb-0">
-        <li class="me-4" style="color: #ff6363">Home</li>
-        <li class="me-4 text-white">Dropdown</li>
-        <li class="me-4 text-white">Inner Page</li>
-        <li class="me-4 text-white">Contact Us</li>
-      </ul>
-    </div>
     <div class="overflow-hidden position-relative" style="background-color: #202040">
+      <div class="container-lg py-4" style="z-index: 10">
+        <div class="row d-flex flex-row align-items-baseline justify-content-evenly">
+          <a class="text-white fw-bold fs-2 col-lg-auto" href="/">Easy</a>
+          <ul class="list-unstyled d-flex align-items-baseline mb-0 col-lg-10">
+            <li class="me-4" style="color: #ff6363">Home</li>
+            <li class="me-4 text-white dropdown">
+              <a
+                class="text-white dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu mt-2 rounded-0" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Menu One</a></li>
+                <li><a class="dropdown-item" href="#">Menu Two</a></li>
+                <li><a class="dropdown-item" href="#">Menu Three</a></li>
+              </ul>
+            </li>
+            <li class="me-4 text-white">Inner Page</li>
+            <li class="me-4 text-white">Contact Us</li>
+          </ul>
+        </div>
+      </div>
       <div
-        class="banner-container container-lg d-flex flex-row position-relative align-items-center"
+        class="banner-container container-lg d-flex flex-row position-relative"
         style="z-index: 1"
       >
-        <div class="row">
+        <div class="row justify-content-center align-items-center">
           <div class="col-lg-5 d-flex flex-column justify-content-center">
             <div class="text-white fw-bold mb-4 display-5">Get Paid Easily without Hassle</div>
             <p class="text-white mb-4">
@@ -55,13 +70,229 @@
               <button class="btn-lg border-0 square-btn rounded text-white">Sign up</button>
             </div>
           </div>
-          <div class="col-lg-7 text-center">
+          <div class="col-lg-6 text-center">
             <img src="./assest/xhero_img.png.pagespeed.ic.DEbE9QfN2U.webp" alt="Banner Image" />
           </div>
         </div>
       </div>
       <div class="position-absolute bottom-0">
         <img class="" src="./assest/slant.svg" alt="" />
+      </div>
+    </div>
+    <div class="container-lg d-flex flex-row mb-5">
+      <div class="row">
+        <img class="col-lg-3" src="./assest/xlogo-puma.png.pagespeed.ic.Vf6zagiaan.webp" alt="" />
+        <img class="col-lg-3" src="./assest/xlogo-adobe.png.pagespeed.ic.EunzgJ5pHe.webp" alt="" />
+        <img class="col-lg-3" src="./assest/xlogo-google.png.pagespeed.ic.8qIx830V7m.webp" alt="" />
+        <img class="col-lg-3" src="./assest/xlogo-paypal.png.pagespeed.ic.MA12MnR3oj.webp" alt="" />
+      </div>
+    </div>
+    <div class="conatainer-lg overflow-hidden mb-5">
+      <div class="row justify-content-center align-items-center mb-4">
+        <div class="d-flex flex-column align-items-center justify-content-center col-lg-5">
+          <h6 class="fw-bold" style="color: #ff6363">AWESOME FEATURES</h6>
+          <h2 class="fw-bold" style="color: #000839; letter-spacing: -1px">Cool Features</h2>
+          <p class="text-center" style="color: #000839">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-evenly mb-4">
+        <div class="col-lg-2 d-flex flex-column align-items-start">
+          <img
+            src="./assest/002-coins.svg"
+            alt=""
+            class="bg-white p-3 mb-4"
+            style="height: 12vh; border-radius: 1.5rem"
+          />
+          <h5 class="fw-bold" style="color: #000839">Cash Collection</h5>
+          <p class="text-black">
+            Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
+          </p>
+        </div>
+        <div class="col-lg-2 d-flex flex-column align-items-start">
+          <img
+            src="./assest/001-stats.svg"
+            alt=""
+            class="bg-white p-3 mb-4"
+            style="height: 12vh; border-radius: 1.5rem"
+          />
+          <h5 class="fw-bold" style="color: #000839">Analytics</h5>
+          <p class="text-black">
+            Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
+          </p>
+        </div>
+        <div class="col-lg-2 d-flex flex-column align-items-start">
+          <img
+            src="./assest/006-garage.svg"
+            alt=""
+            class="bg-white p-3 mb-4"
+            style="height: 12vh; border-radius: 1.5rem"
+          />
+          <h5 class="fw-bold" style="color: #000839">Payment</h5>
+          <p class="text-black">
+            Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-evenly mb-5">
+        <div class="col-lg-2 d-flex flex-column align-items-start">
+          <img
+            src="./assest//004-notebook.svg"
+            alt=""
+            class="bg-white p-3 mb-4"
+            style="height: 12vh; border-radius: 1.5rem"
+          />
+          <h5 class="fw-bold" style="color: #000839">Cash Collection</h5>
+          <p class="text-black">
+            Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
+          </p>
+        </div>
+        <div class="col-lg-2 d-flex flex-column align-items-start">
+          <img
+            src="./assest/003-gold-ingots.svg"
+            alt=""
+            class="bg-white p-3 mb-4"
+            style="height: 12vh; border-radius: 1.5rem"
+          />
+          <h5 class="fw-bold" style="color: #000839">Analytics</h5>
+          <p class="text-black">
+            Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
+          </p>
+        </div>
+        <div class="col-lg-2 d-flex flex-column align-items-start">
+          <img
+            src="./assest/005-brochure.svg"
+            alt=""
+            class="bg-white p-3 mb-4"
+            style="height: 12vh; border-radius: 1.5rem"
+          />
+          <h5 class="fw-bold" style="color: #000839">Payment</h5>
+          <p class="text-black">
+            Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg py-5">
+      <div class="row d-flex flex-row justify-content-evenly">
+        <div class="d-flex flex-column col-lg-4">
+          <div class="fw-bold" style="color: #ff6363; font-size: 0.9rem">JOIN NOW</div>
+          <h3 class="fw-bold mb-4" style="color: #000839">
+            Join More Than 90,000+ Amazing People Loves Our Product
+          </h3>
+          <p class="mb-4">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+            there live the blind texts.
+          </p>
+          <button class="btn-lg pill-btn text-white border-0 rounded-pill fs-6">
+            Product Tour
+          </button>
+        </div>
+        <div class="col-lg-6 bg-white rounded-3">
+          <div id="carouselExampleControls" class="carousel slide p-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item bg-white active">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assest/xperson_1.jpg.pagespeed.ic.xVOD9vMtws.webp"
+                    class="d-block rounded-circle"
+                    alt="Background Image"
+                    style="width: 13%"
+                  />
+                  <div class="d-flex flex-column p-3">
+                    <h5 class="fw-bold" style="color: #000839">Kaila Woodland</h5>
+                    <h5 class="" style="color: #a0a4ab">Owner, Greenland, Inc.</h5>
+                  </div>
+                </div>
+                <p class="fw-bold fs-5 p-2" style="color: #000839">
+                  “Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. Separated they live.”
+                </p>
+              </div>
+              <div class="carousel-item bg-white">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assest/xperson_2.jpg.pagespeed.ic.nNeR9J9CNv.webp"
+                    class="d-block rounded-circle"
+                    alt="Background Image"
+                    style="width: 13%"
+                  />
+                  <div class="d-flex flex-column p-3">
+                    <h5 class="fw-bold" style="color: #000839">Kaila Woodland</h5>
+                    <h5 class="" style="color: #a0a4ab">Owner, Greenland, Inc.</h5>
+                  </div>
+                </div>
+                <p class="fw-bold fs-5 p-2" style="color: #000839">
+                  “Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. Separated they live.”
+                </p>
+              </div>
+              <div class="carousel-item bg-white">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assest/xperson_4.jpg.pagespeed.ic.QBmniJybS-.webp"
+                    class="d-block rounded-circle"
+                    alt="Background Image"
+                    style="width: 13%"
+                  />
+                  <div class="d-flex flex-column p-3">
+                    <h5 class="fw-bold" style="color: #000839">Kaila Woodland</h5>
+                    <h5 class="" style="color: #a0a4ab">Owner, Greenland, Inc.</h5>
+                  </div>
+                </div>
+                <p class="fw-bold fs-5 p-2" style="color: #000839">
+                  “Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts. Separated they live.”
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <button
+                class="me-2 text-black fw-bold py-1 px-2 bg-white"
+                type="button"
+                style="border: 1px solid #efefef"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="text-black fw-bold py-1 px-2 bg-white"
+                type="button"
+                style="border: 1px solid #efefef"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script

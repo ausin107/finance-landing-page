@@ -4,12 +4,21 @@
     margin-right: 10rem !important;
   }
   .banner-container {
-    height: 85vh;
+    height: 75vh;
   }
   .square-btn {
     background-color: #ff6363 !important;
   }
   .banner-input:focus {
     outline: none;
+  }
+  .pill-btn {
+    background-color: #ff6363;
+    width: 40%;
+    transition: all 0.1s ease-in;
+  }
+  .pill-btn:active {
+    background-color: #007bff;
+    box-shadow: 0 0 0 0.2remrgba (38, 143, 255, 0.5);
   }
 }
