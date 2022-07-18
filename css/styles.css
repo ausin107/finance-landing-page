@@ -21,4 +21,49 @@
     background-color: #007bff;
     box-shadow: 0 0 0 0.2remrgba (38, 143, 255, 0.5);
   }
+  .joinnow-btn {
+    border: 1px solid #efefef;
+    transition: all 0.3s ease;
+  }
+  .joinnow-btn:hover {
+    border-color: black !important;
+  }
+  .form-check-input:checked,
+  .form-check-input {
+    background-color: #ff6363 !important;
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem; */
+  }
+  .form-switch .form-check-input {
+    border-radius: 1.5rem !important;
+    width: 3.3rem !important;
+    height: 2rem !important;
+  }
+  .form-check-input::before {
+    display: none !important;
+  }
+  .form-switch .form-check-input:checked[type='checkbox']:after {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    background-color: white !important;
+  }
+  .form-switch .form-check-input:after {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    background-color: white !important;
+    transition: all 1s ease;
+  }
+  .time-box {
+    transition: all 0.3s ease;
+    height: 3.2rem;
+    overflow: hidden;
+  }
+  .price-box {
+    transition: all 0.3s ease;
+    height: 6.5rem;
+    overflow: hidden;
+  }
+  .change {
+    transform: translateY(-50%);
+  }
 }

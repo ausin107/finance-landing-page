@@ -1,7 +1,16 @@
-const ele = document.querySelector('.test')
-
-const bla = () => {
-  console.log(1)
+const ele = document.querySelector('.price-input')
+// const priceEle = document.querySelectorAll('.price-value')
+const timeEle = document.querySelectorAll('.time-box')
+const priceEle = document.querySelectorAll('.price-box')
+const test = () => {
+  console.log(ele.checked)
+  timeEle.forEach((item) => {
+    // item.innerHTML = ele.checked == true ? 'Year' : 'Month'
+    ele.checked == true ? item.classList.add('change') : item.classList.remove('change')
+  })
+  priceEle.forEach((item) => {
+    // item.innerHTML = ele.checked == true ? 'Year' : 'Month'
+    ele.checked == true ? item.classList.add('change') : item.classList.remove('change')
+  })
 }
-
-ele.addEventListener('click', bla)
+ele.addEventListener('change', test)
