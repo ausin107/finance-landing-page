@@ -115,3 +115,27 @@
     color: #ff6363;
   }
 }
+.animation-container {
+  transition: all 0.5s ease;
+  transform: translateY(150px);
+  opacity: 0 !important;
+}
+.banner-container {
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.showItem {
+  transform: translateY(0);
+  opacity: 1 !important;
+}
+.back-top-icon {
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.back-top-icon:hover {
+  border: 1px solid black;
+}
+.showIcon {
+  opacity: 1 !important;
+}
