@@ -6,9 +6,7 @@
   .banner-container {
     height: 75vh;
   }
-  .square-btn {
-    background-color: #ff6363 !important;
-  }
+
   .banner-input:focus {
     outline: none;
   }
@@ -19,7 +17,6 @@
   }
   .pill-btn:active {
     background-color: #007bff;
-    box-shadow: 0 0 0 0.2remrgba (38, 143, 255, 0.5);
   }
   .joinnow-btn {
     border: 1px solid #efefef;
@@ -31,8 +28,6 @@
   .form-check-input:checked,
   .form-check-input {
     background-color: #ff6363 !important;
-    /* padding-top: 0.5rem;
-    padding-bottom: 0.5rem; */
   }
   .form-switch .form-check-input {
     border-radius: 1.5rem !important;
@@ -57,6 +52,9 @@
     transition: all 0.3s ease;
     height: 3.2rem;
     overflow: hidden;
+  }
+  .button-md {
+    width: fit-content;
   }
   .price-box {
     transition: all 0.3s ease;
@@ -115,6 +113,10 @@
     color: #ff6363;
   }
 }
+.square-btn {
+  background-color: #ff6363 !important;
+}
+
 .animation-container {
   transition: all 0.5s ease;
   transform: translateY(150px);
@@ -138,4 +140,32 @@
 }
 .showIcon {
   opacity: 1 !important;
+}
+/*  */
+.pill-btn {
+  background-color: #ff6363;
+  width: 40%;
+  transition: all 0.1s ease-in;
+}
+.pill-btn:active {
+  background-color: #007bff;
+}
+.joinnow-btn {
+  border: 1px solid #efefef;
+  transition: all 0.3s ease;
+}
+.joinnow-btn:hover {
+  border-color: black !important;
+}
+.form-check-input:checked,
+.form-check-input {
+  background-color: #ff6363 !important;
+}
+@media screen and (max-width: 991px) {
+  .button-md {
+    width: 100% !important;
+  }
+  .rounded-pill {
+    width: 100%;
+  }
 }

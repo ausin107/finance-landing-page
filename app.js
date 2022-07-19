@@ -29,7 +29,7 @@ window.addEventListener('scroll', reveal)
 const iconEle = document.querySelector('.back-top-icon ')
 const pointEle = document.querySelector('.item-checkpoint')
 const showIcon = () => {
-  if (pointEle.getBoundingClientRect().top < 0) {
+  if (pointEle?.getBoundingClientRect().top < 0) {
     iconEle.classList.add('showIcon')
   } else {
     iconEle.classList.remove('showIcon')
