@@ -1,130 +1,116 @@
-@media screen and (min-width: 992px) {
-  .nav {
-    margin-left: 10rem !important;
-    margin-right: 10rem !important;
-  }
-  .banner-container {
-    height: 75vh;
-  }
-
-  .banner-input:focus {
-    outline: none;
-  }
-  .pill-btn {
-    background-color: #ff6363;
-    width: 40%;
-    transition: all 0.1s ease-in;
-  }
-  .pill-btn:active {
-    background-color: #007bff;
-  }
-  .joinnow-btn {
-    border: 1px solid #efefef;
-    transition: all 0.3s ease;
-  }
-  .joinnow-btn:hover {
-    border-color: black !important;
-  }
-  .form-check-input:checked,
-  .form-check-input {
-    background-color: #ff6363 !important;
-  }
-  .form-switch .form-check-input {
-    border-radius: 1.5rem !important;
-    width: 3.3rem !important;
-    height: 2rem !important;
-  }
-  .form-check-input::before {
-    display: none !important;
-  }
-  .form-switch .form-check-input:checked[type='checkbox']:after {
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-    background-color: white !important;
-  }
-  .form-switch .form-check-input:after {
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-    background-color: white !important;
-    transition: all 1s ease;
-  }
-  .time-box {
-    transition: all 0.3s ease;
-    height: 3.2rem;
-    overflow: hidden;
-  }
-  .button-md {
-    width: fit-content;
-  }
-  .price-box {
-    transition: all 0.3s ease;
-    height: 6.5rem;
-    overflow: hidden;
-  }
-  .change {
-    transform: translateY(-50%);
-  }
-  .blog-title {
-    color: black;
-  }
-  .blog-title:hover {
-    cursor: pointer;
-    color: #ff6363;
-    transition: all 0.3s ease;
-  }
-  .blog-img {
-    cursor: pointer;
-    filter: grayscale(100%);
-    transition: all 0.3s ease;
-  }
-  .blog-readmore-text {
-    opacity: 0;
-    transform: translateX(20%);
-    transition: all 0.5s ease;
-  }
-  .blog-icon {
-    border: 1px solid #efefef;
-    border-radius: 1rem;
-    color: #ff6363;
-    transition: all 0.3s ease;
-  }
-  .blog-container:hover .blog-icon {
-    border-color: #ff6363;
-  }
-  .blog-container:hover .blog-readmore-text {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  .blog-container:hover .blog-img {
-    filter: grayscale(0);
-  }
-  .footer-icon {
-    color: black;
-    transition: all 0.3s ease;
-  }
-  .footer-icon:hover {
-    color: #ff6363;
-  }
-  .footer-text {
-    color: black;
-    transition: all 0.3s ease;
-  }
-  .footer-text:hover {
-    color: #ff6363;
-  }
-}
-.square-btn {
-  background-color: #ff6363 !important;
-}
-
-.animation-container {
-  transition: all 0.5s ease;
-  transform: translateY(150px);
-  opacity: 0 !important;
+.nav {
+  margin-left: 10rem !important;
+  margin-right: 10rem !important;
 }
 .banner-container {
   transition: all 0.5s ease;
   opacity: 1;
+}
+
+.banner-input:focus {
+  outline: none;
+}
+.pill-btn {
+  background-color: #ff6363;
+  transition: all 0.1s ease-in;
+}
+.pill-btn:active {
+  background-color: #007bff;
+}
+.joinnow-btn:hover {
+  border-color: black !important;
+}
+.form-switch .form-check-input {
+  border-radius: 1.5rem !important;
+  width: 3.3rem !important;
+  height: 2rem !important;
+}
+.form-check-input::before {
+  display: none !important;
+}
+.form-switch .form-check-input:checked[type='checkbox']:after {
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  background-color: white !important;
+}
+.form-switch .form-check-input:after {
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  background-color: white !important;
+  transition: all 1s ease;
+}
+.time-box {
+  transition: all 0.3s ease;
+  height: 3.2rem;
+  overflow: hidden;
+}
+.button-md {
+  width: fit-content;
+}
+.price-box {
+  transition: all 0.3s ease;
+  height: 6.5rem;
+  overflow: hidden;
+}
+/* } */
+.change {
+  transform: translateY(-50%);
+}
+.blog-title {
+  color: black;
+}
+.blog-title:hover {
+  cursor: pointer;
+  color: #ff6363;
+  transition: all 0.3s ease;
+}
+.blog-img {
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+.blog-readmore-text {
+  opacity: 0;
+  transform: translateX(20%);
+  transition: all 0.5s ease;
+}
+.blog-icon {
+  border: 1px solid #efefef;
+  border-radius: 1rem;
+  color: #ff6363;
+  transition: all 0.3s ease;
+}
+.blog-container:hover .blog-icon {
+  border-color: #ff6363;
+}
+.blog-container:hover .blog-readmore-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+.blog-container:hover .blog-img {
+  filter: grayscale(0);
+}
+.footer-icon {
+  color: black;
+  transition: all 0.3s ease;
+}
+.footer-icon:hover {
+  color: #ff6363;
+}
+.footer-text {
+  color: black;
+  transition: all 0.3s ease;
+}
+.footer-text:hover {
+  color: #ff6363;
+}
+.square-btn {
+  background-color: #ff6363 !important;
+}
+.animation-container {
+  transition: all 0.5s ease;
+  transform: translateY(150px);
+  opacity: 0 !important;
 }
 .showItem {
   transform: translateY(0);
@@ -141,31 +127,161 @@
 .showIcon {
   opacity: 1 !important;
 }
-/*  */
-.pill-btn {
-  background-color: #ff6363;
-  width: 40%;
-  transition: all 0.1s ease-in;
-}
-.pill-btn:active {
-  background-color: #007bff;
-}
 .joinnow-btn {
   border: 1px solid #efefef;
   transition: all 0.3s ease;
-}
-.joinnow-btn:hover {
-  border-color: black !important;
 }
 .form-check-input:checked,
 .form-check-input {
   background-color: #ff6363 !important;
 }
-@media screen and (max-width: 991px) {
+.discount-tag {
+  width: fit-content !important;
+}
+.dropdown-navabar {
+  margin-left: 4.1rem !important;
+}
+@media screen and (min-width: 1200px) {
+  .pill-btn {
+    width: 50% !important;
+  }
+  .banner-container {
+    height: 75vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .pill-btn {
+    width: 75% !important;
+  }
+  .banner-container {
+    height: 75vh;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 576px) {
   .button-md {
     width: 100% !important;
   }
-  .rounded-pill {
-    width: 100%;
+  .pill-btn {
+    width: 50% !important;
+  }
+  .banner-container {
+    height: 100vh;
+  }
+  .sidebar {
+    z-index: 100;
+    transition: all 0.9s ease;
+  }
+  .hidden-sidebar {
+    transform: translateX(100%);
+    transition: all 0.9s ease;
+  }
+  .menu-left {
+    height: 100%;
+    width: 40%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+  }
+  .dropdown-child {
+    opacity: 0;
+    transform: translateY(100%);
+    height: 0;
+  }
+  .show-menu {
+    opacity: 1;
+    transform: translateY(0%);
+    animation: growDown 400ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+  .close-menu {
+    animation: growUp 400ms ease-in-out;
+    transform-origin: top center;
+  }
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+      height: 0%;
+    }
+    100% {
+      transform: scaleY(1);
+      height: 100%;
+    }
+  }
+  @keyframes growUp {
+    0% {
+      transform: scaleY(1);
+      height: 100%;
+      opacity: 1;
+    }
+    100% {
+      transform: scaleY(0);
+      height: 0%;
+      opacity: 0;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .pill-btn {
+    width: 100% !important;
+  }
+  .banner-container {
+    height: 100vh;
+  }
+  .banner-image {
+    width: inherit;
+  }
+  .sidebar {
+    z-index: 100;
+    transition: all 0.9s ease;
+  }
+  .hidden-sidebar {
+    transform: translateX(100%);
+    transition: all 0.9s ease;
+  }
+  .menu-left {
+    height: 100%;
+    width: 60%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+  }
+  .dropdown-child {
+    opacity: 0;
+    transform: translateY(100%);
+    height: 0;
+  }
+  .show-menu {
+    opacity: 1;
+    transform: translateY(0%);
+    animation: growDown 400ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+  .close-menu {
+    animation: growUp 400ms ease-in-out;
+    transform-origin: top center;
+  }
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+      height: 0%;
+    }
+    100% {
+      transform: scaleY(1);
+      height: 100%;
+    }
+  }
+  @keyframes growUp {
+    0% {
+      transform: scaleY(1);
+      height: 100%;
+      opacity: 1;
+    }
+    100% {
+      transform: scaleY(0);
+      height: 0%;
+      opacity: 0;
+    }
   }
 }

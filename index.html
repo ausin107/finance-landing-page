@@ -39,9 +39,11 @@
     </div>
     <div class="overflow-hidden position-relative" style="background-color: #202040">
       <div class="container-sm py-4" style="z-index: 10">
-        <div class="row d-flex flex-row align-items-baseline justify-content-evenly">
-          <a class="text-white fw-bold fs-2 col-lg-auto" href="/">Easy</a>
-          <ul class="list-unstyled d-flex align-items-baseline mb-0 col-lg-10">
+        <div
+          class="row d-flex flex-row align-items-center justify-content-between align-items-lg-baseline justify-content-lg-evenly"
+        >
+          <a class="text-white fw-bold fs-2 col-lg-auto col-auto" href="#">Easy</a>
+          <ul class="list-unstyled d-none d-lg-flex align-items-baseline mb-0 col-lg-10">
             <li class="me-4" style="color: #ff6363">Home</li>
             <li class="me-4 text-white dropdown">
               <a
@@ -51,18 +53,96 @@
                 id="dropdownMenuLink"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                data-bs-auto-close="outside"
               >
                 Dropdown
               </a>
               <ul class="dropdown-menu mt-2 rounded-0" aria-labelledby="dropdownMenuLink">
                 <li><a class="dropdown-item" href="#">Menu One</a></li>
-                <li><a class="dropdown-item" href="#">Menu Two</a></li>
+                <li>
+                  <div class="dropdown-item dropend p-5" style="cursor: pointer">
+                    <a
+                      class="dropdown-toggle border-0 text-black"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Menu Two
+                    </a>
+                    <ul class="dropdown-menu rounded-0 dropdown-navabar">
+                      <li class="me-4 dropdown-item p-2 ps-3">Sub Menu 1</li>
+                      <li class="me-4 dropdown-item p-2 ps-3">Sub Menu 2</li>
+                      <li class="me-4 dropdown-item p-2 ps-3">Sub Menu 3</li>
+                    </ul>
+                  </div>
+                </li>
                 <li><a class="dropdown-item" href="#">Menu Three</a></li>
               </ul>
             </li>
             <li class="me-4 text-white">Inner Page</li>
             <li class="me-4 text-white">Contact Us</li>
           </ul>
+          <div class="col-auto d-lg-none text-end d-flex justify-content-end">
+            <div class="open-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-list text-white"
+                viewBox="0 0 16 16"
+                style="height: 3rem; width: 3rem"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </div>
+            <div class="position-fixed sidebar hidden-sidebar w-100 h-100 top-0 end-0 close-bg">
+              <ul
+                class="list-unstyled menu-left bg-white fs-3 d-flex align-items-start flex-column p-5"
+              >
+                <div class="position-absolute top-0 end-0 p-2 close-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-x"
+                    viewBox="0 0 16 16"
+                    style="height: 3rem; width: 3rem"
+                  >
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </div>
+                <li class="" style="color: #ff6363">Home</li>
+                <li class="text-black text-start">
+                  <a class="text-black dropdown-devices" href="#">
+                    Dropdown
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-caret-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="rounded-0 list-unstyled ps-4 dropdown-child close-menu fs-4">
+                    <li><a class="text-black" href="#">Menu One</a></li>
+                    <li><a class="text-black" href="#">Menu Two</a></li>
+                    <li><a class="text-black" href="#">Menu Three</a></li>
+                  </ul>
+                </li>
+                <li class="text-black">Inner Page</li>
+                <li class="text-black">Contact Us</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -71,14 +151,14 @@
       >
         <div class="row justify-content-center align-items-center">
           <div
-            class="col-lg-5 d-flex flex-column justify-content-center align-items-md-center mb-5 mb-lg-0"
+            class="col-lg-5 col-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start mb-5 mb-lg-0"
           >
             <div class="text-white fw-bold mb-4 display-5">Get Paid Easily without Hassle</div>
             <p class="text-white mb-4">
               Far far away, behind the word mountains, far from the countries Vokalia and
               Consonantia, there live the blind texts. Separated they live.
             </p>
-            <div class="bg-white d-flex py-2 px-2 rounded justify-content-between button-md">
+            <div class="bg-white d-flex py-2 px-2 rounded justify-content-between button-md w-100">
               <input
                 class="border-0 ps-3 pe-5 banner-input"
                 type="email"
@@ -87,8 +167,12 @@
               <button class="btn-lg border-0 square-btn rounded text-white">Sign up</button>
             </div>
           </div>
-          <div class="col-lg-6 text-center">
-            <img src="./assest/xhero_img.png.pagespeed.ic.DEbE9QfN2U.webp" alt="Banner Image" />
+          <div class="col-lg-6 col-12 text-center">
+            <img
+              class="banner-image"
+              src="./assest/xhero_img.png.pagespeed.ic.DEbE9QfN2U.webp"
+              alt="Banner Image"
+            />
           </div>
         </div>
       </div>
@@ -133,7 +217,7 @@
       <div
         class="row row-cols-lg-3 animation-container align-items-center justify-content-evenly mb-4"
       >
-        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-start">
+        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-sm-start align-items-center">
           <img
             src="./assest/002-coins.svg"
             alt=""
@@ -145,7 +229,7 @@
             Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
           </p>
         </div>
-        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-start">
+        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-sm-start align-items-center">
           <img
             src="./assest/001-stats.svg"
             alt=""
@@ -157,7 +241,7 @@
             Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
           </p>
         </div>
-        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-start">
+        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-sm-start align-items-center">
           <img
             src="./assest/006-garage.svg"
             alt=""
@@ -171,7 +255,7 @@
         </div>
         <!-- </div>
       <div class="row animation-container align-items-center justify-content-evenly mb-5"> -->
-        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-start">
+        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-sm-start align-items-center">
           <img
             src="./assest//004-notebook.svg"
             alt=""
@@ -183,7 +267,7 @@
             Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
           </p>
         </div>
-        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-start">
+        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-sm-start align-items-center">
           <img
             src="./assest/003-gold-ingots.svg"
             alt=""
@@ -195,7 +279,7 @@
             Manage your invoces from creation to payment. With Upflow you'll collect 100% of.
           </p>
         </div>
-        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-start">
+        <div class="col-lg-4 col-sm-5 d-flex flex-column align-items-sm-start align-items-center">
           <img
             src="./assest/005-brochure.svg"
             alt=""
@@ -209,7 +293,7 @@
         </div>
       </div>
     </div>
-    <div class="container-sm animation-container py-5">
+    <div class="container-sm animation-container my-5 py-lg-5">
       <div class="row d-flex flex-row justify-content-evenly">
         <div class="d-flex flex-column col-lg-4 my-5 my-lg-0">
           <div class="fw-bold" style="color: #ff6363; font-size: 0.9rem">JOIN NOW</div>
@@ -383,14 +467,14 @@
           </div>
           <div class="me-2">Yearly</div>
           <span
-            class="badge rounded-pill d-flex align-items-center"
+            class="badge rounded-pill d-flex align-items-center discount-tag"
             style="background-color: #ff6363"
             >Save 25%</span
           >
         </div>
       </div>
       <div class="row d-flex flex-row justify-content-evenly">
-        <div class="col-lg-3 py-5 px-4 d-flex flex-column align-items-center">
+        <div class="col-lg-3 col-12 py-5 px-4 d-flex flex-column align-items-center">
           <h3 class="fw-bold mb-4" style="color: #000839">Personal</h3>
           <div class="text-center mb-4 fs-5" style="color: #a0a4ab">
             Far far away, behind the word mountains
@@ -449,9 +533,11 @@
               </div>
             </li>
           </ul>
-          <button class="btn-lg pill-btn text-white border-0 rounded-pill w-50">Get Started</button>
+          <button class="btn-lg pill-btn text-white border-0 rounded-pill">Get Started</button>
         </div>
-        <div class="col-lg-3 py-5 px-4 d-flex flex-column align-items-center bg-white rounded">
+        <div
+          class="col-lg-3 col-12 py-5 px-4 d-flex flex-column align-items-center bg-white rounded"
+        >
           <h3 class="fw-bold mb-4" style="color: #000839">Enterprise</h3>
           <div class="text-center mb-4 fs-5" style="color: #a0a4ab">
             Far far away, behind the word mountains
@@ -510,9 +596,9 @@
               </div>
             </li>
           </ul>
-          <button class="btn-lg pill-btn text-white border-0 rounded-pill w-50">Get Started</button>
+          <button class="btn-lg pill-btn text-white border-0 rounded-pill">Get Started</button>
         </div>
-        <div class="col-lg-3 py-5 px-4 d-flex flex-column align-items-center">
+        <div class="col-lg-3 col-12 py-5 px-4 d-flex flex-column align-items-center">
           <h3 class="fw-bold mb-4" style="color: #000839">Enterprise</h3>
           <div class="text-center mb-4 fs-5" style="color: #a0a4ab">
             Far far away, behind the word mountains
@@ -571,7 +657,7 @@
               </div>
             </li>
           </ul>
-          <button class="btn-lg pill-btn text-white border-0 rounded-pill w-50">Get Started</button>
+          <button class="btn-lg pill-btn text-white border-0 rounded-pill">Get Started</button>
         </div>
       </div>
     </div>
@@ -579,8 +665,8 @@
       <div class="container-sm animation-container py-5">
         <div class="text-center fw-bold" style="color: #ff6363; font-size: 0.9rem">BLOG</div>
         <h3 class="text-center fw-bold mb-4" style="color: #000839">Blog Posts</h3>
-        <div class="row d-flex flex-row justify-content-evenly py-4">
-          <div class="card col-lg-2 p-0 blog-container" style="min-width: 22%">
+        <div class="row d-flex flex-row justify-content-evenly py-4 gap-3 gap-lg-0">
+          <div class="card col-lg-2 col-sm-5 col-10 p-0 blog-container" style="min-width: 22%">
             <img
               src="./assest/xgal_1.jpg.pagespeed.ic.V12iBwOGIs.webp"
               class="card-img-top blog-img"
@@ -612,7 +698,7 @@
               </a>
             </div>
           </div>
-          <div class="card col-lg-2 p-0 blog-container" style="min-width: 22%">
+          <div class="card col-lg-2 col-sm-5 col-10 p-0 blog-container" style="min-width: 22%">
             <img
               src="./assest/xgal_2.jpg.pagespeed.ic.mDALWHAaWm.webp"
               class="card-img-top blog-img"
@@ -644,7 +730,7 @@
               </a>
             </div>
           </div>
-          <div class="card col-lg-2 p-0 blog-container" style="min-width: 22%">
+          <div class="card col-lg-2 col-sm-5 col-10 p-0 blog-container" style="min-width: 22%">
             <img
               src="./assest/xgal_3.jpg.pagespeed.ic.GnLGzx0EBQ.webp"
               class="card-img-top blog-img"
@@ -676,7 +762,7 @@
               </a>
             </div>
           </div>
-          <div class="card col-lg-2 p-0 blog-container" style="min-width: 22%">
+          <div class="card col-lg-2 col-sm-5 col-10 p-0 blog-container" style="min-width: 22%">
             <img
               src="./assest/xgal_4.jpg.pagespeed.ic.iYqeJnU_mN.webp"
               class="card-img-top blog-img"

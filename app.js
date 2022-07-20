@@ -44,3 +44,28 @@ const toTop = () => {
 }
 window.addEventListener('scroll', showIcon)
 iconEle.addEventListener('click', toTop)
+//Show Dropdown Menu
+const btnEle = document.querySelector('.dropdown-devices')
+const dropdownMenu = document.querySelector('.dropdown-child')
+const showDropdown = () => {
+  dropdownMenu.classList.toggle('show-menu')
+  dropdownMenu.classList.toggle('close-menu')
+}
+btnEle.addEventListener('click', showDropdown)
+//Open and Close SideBar
+const closeBtn = document.querySelector('.close-btn')
+const openBtn = document.querySelector('.open-btn')
+const closeBg = document.querySelector('.close-bg')
+const sideBarEle = document.querySelector('.sidebar')
+const insideSideBar = document.querySelector('.menu-left')
+const toggleSideBar = (event) => {
+  event.stopPropagation()
+  sideBarEle.classList.toggle('hidden-sidebar')
+}
+openBtn.addEventListener('click', toggleSideBar)
+closeBtn.addEventListener('click', toggleSideBar)
+closeBg.addEventListener('click', toggleSideBar)
+// stop bubble effect
+insideSideBar.addEventListener('click', function (event) {
+  event.stopPropagation()
+})
