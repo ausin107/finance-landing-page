@@ -221,6 +221,9 @@
     }
   }
 }
+.cs-pointer {
+  cursor: pointer;
+}
 @media screen and (max-width: 575px) {
   .pill-btn {
     width: 100% !important;
